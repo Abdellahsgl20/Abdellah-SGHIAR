@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Locamoto.css">
+    <title>Locamoto</title>
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-logo"></a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="#" style="--navAni:2">About</a></li>
+                    <li><a href="#" style="--navAni:3">Skills</a></li>
+                    <li><a href="#" style="--navAni:4">Projects</a></li>
+                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-adjust'></i>
+                </label>
+            </div>
+        </header>
+    
+        <section class="section" id="3">
+            <div class="main">
+                <div class="detail1">
+                    <h2>Locamoto</h2>
+                    <video class="video" width="920" height="440" controls>
+                        <source src="videos/Locamoto.mp4" type="video/mp4">
+                      </video>
+                </div>
+                
+                <div class="detail2">
+                 <h3>About Locamoto :</h3>   
+                 <br>
+            <p>
+                “Unleash your passion for driving with Locamoto: Freedom without ownership constraints!”
+                <br>
+                Discover a new way to enjoy motorcycling with Locamoto, the motorcycle rental service designed to meet your escape needs with ease. Take advantage of the multiple benefits we offer to make your experience unforgettable:
+                <br>
+                🏍️<span>Wide range of choices: Find the perfect motorcycle among our diversity of models, suitable for all driving styles.</span>
+                <br>
+                🔄 <span>Rental flexibility: Choose the duration that suits you, whether for a day of outing, a week of adventure or more.</span>
+                <br>
+                💰 <span>Competitive rates: Our rental rates are clear and competitive, with no surprises or hidden fees.</span>
+                <br>
+                📱 <span>Easy online booking: Reserve your favorite motorcycle in just a few clicks, from the comfort of your home.</span> 
+                <br>
+                🛡️ <span>Insurance included: Drive with peace of mind with our insurance included in all rentals.</span>
+                <br>
+                Whether you're a seasoned motorcycle enthusiast or a casual rider, Locamoto offers you a convenient and affordable solution for exploring the road without the hassles of motorcycle ownership. Free yourself and go on an adventure today with Locamoto!</p>
+                </div>
+                </div>
+            </section>      
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

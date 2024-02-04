@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="LesStages.css">
+    <title>LesStages</title>
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-logo"></a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="#" style="--navAni:2">About</a></li>
+                    <li><a href="#" style="--navAni:3">Skills</a></li>
+                    <li><a href="#" style="--navAni:4">Projects</a></li>
+                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-adjust'></i>
+                </label>
+            </div>
+        </header>
+    
+        <section class="section" id="3">
+            <div class="main">
+                <div class="detail1">
+                    <h2>LesStages</h2>
+                    <video class="video" width="920" height="440" controls>
+                        <source src="videos/LesStages.mp4" type="video/mp4">
+                      </video>
+                </div>
+                
+                <div class="detail2">
+                 <h3>About LesStages :</h3>   
+                 <br>
+                 <p>
+                    "LesStages: Simplify Your Internship Experience!"
+                    <br>
+                    Welcome to LesStages, a web development project aimed at streamlining the search and management of internships for students and companies. The primary goal of this platform is to connect students with relevant opportunities while simplifying the application and tracking process for companies.
+                    <br>
+                    Key Features:
+                    <br>
+                    🔍 <span>Effortless Internship Search: Seamlessly search for internships that match your preferences and career goals. Our platform provides a user-friendly interface, ensuring a smooth experience for students.</span>
+                    <br>
+                    🔄 <span>Simplified Application Process: Easily apply to internships with a straightforward application process. We prioritize user-friendliness to make the application journey hassle-free for students and save time for companies.</span>
+                    <br>
+                    🤝 <span>Connecting Students and Companies: Our platform serves as a bridge between students seeking internships and companies offering valuable opportunities. Create meaningful connections that benefit both parties.</span>
+                    <br>
+                    📅 <span>Application Tracking: Keep track of your internship applications and their status. Our system provides real-time updates, ensuring you stay informed throughout the application process.</span>
+                    <br>
+                    👨‍💼 <span>Company Collaboration: For companies, our platform facilitates seamless collaboration with students. Post internships, review applications, and find the best match for your organization's needs.</span>
+                    <br>
+                    👥 <span>Dedicated Support Team: Should you encounter any challenges or have inquiries about Internship Hub, our dedicated support team is ready to assist you. We are committed to delivering exceptional service and ensuring your satisfaction throughout your internship journey.</span>
+                    <br>
+                    Embark on your internship experience with Internship Hub today. Connect with opportunities, streamline your application process, and make the most of your internship journey. Your path to valuable professional experience begins right here!
+                </p>
+                </div>
+                </div>
+            </section>      
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

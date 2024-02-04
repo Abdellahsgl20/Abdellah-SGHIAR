@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="TxttoHtml.css">
+    <title>TxttoHtml</title>
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-logo"></a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="#" style="--navAni:2">About</a></li>
+                    <li><a href="#" style="--navAni:3">Skills</a></li>
+                    <li><a href="#" style="--navAni:4">Projects</a></li>
+                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-adjust'></i>
+                </label>
+            </div>
+        </header>
+    
+        <section class="section" id="3">
+            <div class="main">
+                <div class="detail1">
+                    <h2>TxttoHtml</h2>
+                    <video class="video" width="920" height="440" controls>
+                        <source src="videos/TxttoHtml.mp4" type="video/mp4">
+                      </video>
+                </div>
+                
+                <div class="detail2">
+                 <h3>About TxttoHtml :</h3>   
+                 <br>
+                 <p>
+                    "HTML Converter: Transform Your Text with Ease!"
+                    <br>
+                    Welcome to our innovative HTML conversion application, dedicated to making your text come to life in the digital world. Our user-friendly tool offers a seamless conversion process, turning plain text into beautifully formatted HTML content. Whether you need to create web pages, emails, or other HTML-based documents, our application is here to simplify the process and enhance your digital communication.
+                    <br>
+                    Key Features:
+                    <br>
+                    🖋️ <span>Easy Text to HTML Conversion: Effortlessly convert your plain text into HTML markup with a simple click. Our application ensures accuracy and preserves the structure of your text during the conversion process.</span>
+                    <br>
+                    🔄 <span>Format Flexibility: Enjoy the flexibility to choose from various formatting options. Customize the appearance of your HTML content to suit your preferences and meet the specific requirements of your projects.</span>
+                    <br>
+                    💻 <span>User-Friendly Interface: Our application boasts an intuitive and user-friendly interface, making the conversion process accessible to users of all experience levels. No coding skills required!</span>
+                    <br>
+                    🛡️ <span>Security Assurance: Rest easy knowing that our application prioritizes the security of your content. We provide a secure environment for your text-to-HTML conversion, ensuring the confidentiality of your information.</span>
+                    <br>
+                    👨‍💻 <span>Dedicated Support Team: Should you encounter any issues or have questions about the conversion process, our dedicated support team is ready to assist you. We are committed to providing excellent service and ensuring your satisfaction.</span>
+                    <br>
+                    Get started with our HTML Converter today and unlock the potential of your text in the digital realm. Transform your ideas into visually appealing HTML content effortlessly. Your journey to effective digital communication begins here!
+                </p>
+                </div>
+                </div>
+            </section>      
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

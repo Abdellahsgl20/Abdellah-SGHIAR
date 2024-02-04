@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Section1.css">
+    <title>Section1</title>
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-logo"></a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="#" style="--navAni:2">About</a></li>
+                    <li><a href="#" style="--navAni:3">Skills</a></li>
+                    <li><a href="#" style="--navAni:4">Projects</a></li>
+                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-adjust'></i>
+                </label>
+            </div>
+        </header>
+    
+        <section class="section" id="3">
+            <div class="main">
+                <div class="detail1">
+                    <h2>Section1</h2>
+                    <video class="video" width="920" height="440" controls>
+                        <source src="videos/Section1.mp4" type="video/mp4">
+                      </video>
+                </div>
+                
+                <div class="detail2">
+                 <h3>About Section1 :</h3>   
+                 <br>
+                 <p>
+                    "Dynamic Security: Your Peace of Mind, Our Priority!"
+                    <br>
+                    Welcome to our dynamic website, dedicated to your security. We provide you with a full range of services to meet all your security needs. Whether you are looking for security control reliable access, staff support, surveillance of public spaces, post-intrusion security or exceptional services for specific events, we are here to guarantee your peace of mind.
+                    <br>
+                    Our commitments to you:
+                    <br>
+                    🌐 <span>Wide choice of services: Explore our extensive range of security services tailored to various requirements.</span>
+                    <br>
+                    🔄 <span>Flexibility of solutions: We offer you flexible solutions that adapt to your specific needs, ensuring tailor-made security.</span>
+                    <br>
+                    💻 <span>Easy online booking: Simplify your process by booking our online services, with complete ease and convenience.</span>
+                    <br>
+                    🛡️ <span>Insurance included for your peace of mind: Every service we offer includes insurance to guarantee you complete security.</span>
+                    <br>
+                    👨‍💼 <span>Dedicated professionals: Our team of dedicated professionals is ready to keep you safe with skill and commitment. Trust our expertise to provide you with uncompromising security.</span>
+                    <br>
+                    Your peace of mind starts here!
+                </p>
+                
+                </div>
+                </div>
+            </section>      
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

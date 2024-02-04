@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Archima.css">
+    <title>Archima</title>
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-logo"></a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="#" style="--navAni:2">About</a></li>
+                    <li><a href="#" style="--navAni:3">Skills</a></li>
+                    <li><a href="#" style="--navAni:4">Projects</a></li>
+                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-adjust'></i>
+                </label>
+            </div>
+        </header>
+    
+        <section class="section" id="3">
+            <div class="main">
+                <div class="detail1">
+                    <h2>Archima</h2>
+                    <video class="video" width="920" height="440" controls>
+                        <source src="videos/Archima.mp4" type="video/mp4">
+                      </video>
+                </div>
+                
+                <div class="detail2">
+                 <h3>About Archima :</h3>   
+                 <br>
+                 <p>
+                    "Architect Services Hub: Connect with Talent, Redefine Spaces!"
+                    <br>
+                    Welcome to our innovative platform dedicated to architect services, where meticulous planning, from design to development, transforms visions into reality. Craft detailed profiles for each architect, showcase their portfolios, and establish a user-friendly system of contact forms. We provide an efficient platform connecting talented architects with clients seeking exceptional architectural solutions.
+                    <br>
+                    Key Features:
+                    <br>
+                    🏛️ <span>Detailed Architect Profiles: Create comprehensive profiles for each architect, highlighting their expertise and achievements in the field.</span>
+                    <br>
+                    🎨 <span>Showcase Portfolios: Put architectural masterpieces in the spotlight by featuring captivating portfolios that reflect the unique style and creativity of each architect.</span>
+                    <br>
+                    📝 <span>User-Friendly Contact Forms: Develop a seamless system of user-friendly contact forms, streamlining the communication process between architects and potential clients.</span>
+                    <br>
+                    🤝 <span>Efficient Connection: Facilitate efficient connections by providing a platform that matches talented architects with clients seeking outstanding architectural solutions.</span>
+                    <br>
+                    💼 <span>Career Opportunities: Explore career opportunities and collaborations by connecting architects with exciting projects that align with their expertise.</span>
+                    <br>
+                    Whether you're an architect looking to showcase your talent or a client in search of exceptional architectural services, Architect Services Hub is your go-to platform for redefining spaces and creating extraordinary designs. Join us today and embark on a journey to transform your architectural visions into reality!"
+                </p>
+                
+                </div>
+                </div>
+            </section>      
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

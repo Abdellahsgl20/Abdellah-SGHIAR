@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="SGP.css">
+    <title>SGP</title>
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-logo"></a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="#" style="--navAni:2">About</a></li>
+                    <li><a href="#" style="--navAni:3">Skills</a></li>
+                    <li><a href="#" style="--navAni:4">Projects</a></li>
+                    <li><a href="#" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-adjust'></i>
+                </label>
+            </div>
+        </header>
+    
+        <section class="section" id="3">
+            <div class="main">
+                <div class="detail1">
+                    <h2>SGP</h2>
+                    <video class="video" width="920" height="440" controls>
+                        <source src="videos/SGP.mp4" type="video/mp4">
+                      </video>
+                </div>
+                
+                <div class="detail2">
+                 <h3>About SGP :</h3>   
+                 <br>
+                 <p>
+                    "Project Management System: Streamline Your Project Workflow!"
+                    <br>
+                    Welcome to our advanced Project Management System, a comprehensive suite of tools, techniques, and processes meticulously designed to plan, organize, track, and control various tasks within your projects. Our goal is to ensure the successful completion of your projects within the set timelines, allocated budget, and available resources, elevating your project management experience to new heights.
+                    <br>
+                    Key Features:
+                    <br>
+                    📊 <span>Intuitive Project Planning: Seamlessly plan your project with our user-friendly interface. Our system empowers you to strategically outline tasks, allocate resources, and set realistic timelines for successful project execution.</span>
+                    <br>
+                    🔄 <span>Effortless Task Organization: Simplify task management with our innovative system. Organize and prioritize tasks efficiently, ensuring a smooth workflow and optimal utilization of resources throughout the project lifecycle.</span>
+                    <br>
+                    💼 <span>Resource Allocation: Our system provides a robust resource allocation feature, enabling you to assign and manage resources effectively. This ensures that your team members are utilized optimally, contributing to the overall success of the project.</span>
+                    <br>
+                    🛡️ <span>Real-Time Project Tracking: Keep a pulse on your project's progress in real-time. Our tracking tools provide valuable insights into task completion, milestones achieved, and potential bottlenecks, allowing for timely adjustments and course corrections.</span>
+                    <br>
+                    👥 <span>Collaborative Workspace: Foster collaboration among your team members with our collaborative workspace. Facilitate seamless communication, document sharing, and real-time updates, enhancing overall team efficiency and cohesion.</span>
+                    <br>
+                    👨‍💻 <span>Dedicated Support Team: Should you encounter any challenges or have inquiries about our Project Management System, our dedicated support team is at your service. We are committed to delivering exceptional assistance and ensuring your satisfaction throughout your project management journey.</span>
+                    <br>
+                    Embark on your project management journey with our innovative system today. Unleash the full potential of your projects, transforming them into well-organized and successful endeavors. Your path to efficient project management begins right here!
+                </p>
+                </div>
+                </div>
+            </section>      
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>
