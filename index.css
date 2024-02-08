@@ -257,12 +257,11 @@ li a:hover {
 
 /* Section 3 */
 
-.section3{
+.section3 {
     justify-content: center;
-    
-    
 }
-.sskill{
+
+.sskill {
     padding: 0em 0.8em;
     text-align: center;
     background-color: #a2acaf;
@@ -272,30 +271,36 @@ li a:hover {
     font-size: 1.3rem;
     font-weight: bold;
 }
-.skills h2{
+
+.skills h2 {
     font-size: 3.2rem;
     color: #33b864;
     font-family: cursive;
 }
-.image-skills {
+
+.image-skills,
+.image-skills2 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25rem;
-    
+    justify-content: center; 
+    margin: 0; 
 }
-.column:hover{
+
+.column:hover {
     transform: translate(10px, 10px);
 }
+
 .column {
-    margin: 2rem;
+    margin: 1rem; 
 }
-.column img{
-    width: 3.2rem;
+
+.column img {
+    width: 2.8rem;
 }
-.column p{
-    color: #787e81 ;
+
+.column p {
+    color: #787e81;
 }
-/* Section 3 End */
 
 /* Section 4 */
 
@@ -320,7 +325,7 @@ li a:hover {
 }
 .pro1:hover{
     transform: rotate(3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .proa2 {
    
@@ -341,7 +346,7 @@ li a:hover {
 }
 .pro2:hover{
     transform: rotate(3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro2 img{
     width: 20rem;
@@ -368,7 +373,7 @@ li a:hover {
 }
 .pro3:hover{
     transform: rotate(-3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro3 img{
     width: 20rem;
@@ -395,7 +400,7 @@ li a:hover {
 }
 .pro4:hover{
     transform: rotate(-3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro4 img{
     width: 20rem;
@@ -430,7 +435,7 @@ li a:hover {
 }
 .pro5:hover{
     transform: rotate(3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro5 img{
     width: 20rem;
@@ -457,7 +462,7 @@ li a:hover {
 }
 .pro6:hover{
     transform: rotate(3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro6 img{
     width: 20rem;
@@ -484,7 +489,7 @@ li a:hover {
 }
 .pro7:hover{
     transform: rotate(-3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro7 img{
     width: 20rem;
@@ -511,7 +516,7 @@ li a:hover {
 }
 .pro8:hover{
     transform: rotate(-3deg);
-    box-shadow: 5px 5px 7px  #aaaaaa;
+    box-shadow: 3px 4px 7px  #aaaaaa;
 }
 .pro8 img{
     width: 20rem;
@@ -668,9 +673,69 @@ li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .page-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        opacity: 0;
+        animation: rightSideAni 1s ease forwards;
+    }
+
+    ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li a {
+        opacity: 0;
+        animation: navani .3s ease forwards;
+        animation-delay: calc(.15s * var(--navAni));
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mode i {
+        opacity: 0;
+        animation: rightSideAni 1.5s ease forwards;
+    }
     .container {
         padding: 0 1.6rem;
     }
+    .images {
+        
+        margin: auto;
+    }
+    .aabout {
+        font-size: 1rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+    .image-skills {
+        margin-left: 0; 
+    }
+
+    .image-skills2 {
+        margin-left: 0; 
+    }
+
+    .skills h2 {
+        font-size: 2rem; 
+    }
+
+    .column img {
+        width: 1.5rem; 
+    }
+    
 }
 
 @media screen and (max-width:600px) {
@@ -719,38 +784,52 @@ li a:hover {
         right: 4rem;
     }
     .images {
-        width: 61%;
-        height: 80%;
         margin: auto;
+        
     }
-
+    .section-divider {
+    
+        margin-top: 0px;
+    }
     .img-about{
-        width: 25rem;
+        width: 20rem;
     }
     .about p{
         text-align: start;
         font-size: 1.2rem;
-        margin: 1rem;
+        
     }
     .about h2{
         font-size: 2.4rem;
     }
-    .skills h2{
-        font-size: 2.2rem;
-       
+    .image-skills,
+    .image-skills2 {
+        margin-left: 0; 
     }
+
     .column {
-        margin: 0.7rem;
-        margin-top: 3rem;
+        margin: 1rem; 
     }
-    .column img{
-        width: 2.1rem;
+
+    .skill-container {
+        text-align: center; 
     }
-    .image-skills {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 0.5rem;
-        
+
+    .sskill {
+        margin-bottom: 1rem; 
+    }
+
+    .image-skills,
+    .image-skills2 {
+        justify-content: center;
+    }
+
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .column img {
+        width: 2.5rem; 
     }
     .projects h2{
         font-size: 2.4rem;
@@ -765,4 +844,5 @@ li a:hover {
         grid-gap: 20px;
         justify-content: center;
     }
+   
 }
