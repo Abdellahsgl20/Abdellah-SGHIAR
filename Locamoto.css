@@ -268,6 +268,31 @@ li a:hover {
     .container {
         padding: 0 1.6rem;
     }
+  
+    .detail1 h2 {
+        font-size: 3rem;
+    }
+
+    .video {
+        width: 100%; 
+        height: auto;
+    }
+
+    .detail2 {
+        text-align: center; 
+    }
+
+    .detail2 h3 {
+        font-size: 1.8rem; 
+    }
+
+    .detail2 p {
+        font-size: 1.2rem; 
+    }
+
+    .detail2 p span {
+        font-size: 1rem; 
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -320,49 +345,30 @@ li a:hover {
         height: 80%;
         margin: auto;
     }
+    .detail1 h2 {
+        font-size: 2.5rem; 
+    }
 
-    .main {
-        margin-top: 2rem;
+    .video {
+        width: 100%; 
+        height: auto;
     }
-    .img-about{
-        width: 25rem;
+
+    .detail2 {
+        text-align: center; 
     }
-    .about p{
-        font-size: 1.1rem;
-        margin: 2rem;
+
+    .detail2 h3 {
+        font-size: 1.5rem; 
     }
-    .skills h2{
-        font-size: 1.7rem;
-        color: #33b864;
-        font-family: cursive;
+
+    .detail2 p {
+        font-size: 1rem; 
+        text-align: justify;
     }
-    .column {
-        margin: 1rem;
-    }
-    .column img{
-        width: 2.2rem;
-    }
-    .detail1 h2{
-        font-size: 2.7rem;
-    }
-    .video{
-        width: 28rem;
-        height: 20rem;
-    }
-    .detail2{
-        margin: 2rem;
-    }
-    .detail2 h3{
-        font-size: 1.8rem;
-    }
-    .detail2 p{
-        line-height: 1.6;
-        font-size: 1.1rem;
-        
-    }
-    .detail2 p span{
-        
-        font-size: 1rem;
+
+    .detail2 p span {
+        font-size: 0.8rem;
     }
     
 }
