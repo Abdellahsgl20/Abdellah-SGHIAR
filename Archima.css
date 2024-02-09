@@ -268,6 +268,37 @@ li a:hover {
     .container {
         padding: 0 1.6rem;
     }
+    .main {
+        grid-template-columns: 1fr; 
+    }
+
+    .detail1 h2 {
+        font-size: 3rem; 
+    }
+
+    .video {
+        width: 100%; 
+        height: auto;
+    }
+
+    .detail2 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .detail2 h3 {
+        font-size: 1.8rem;
+    }
+
+    .detail2 p {
+        font-size: 1.2rem; 
+        line-height: 1.4;
+    }
+
+    .detail2 p span {
+        font-size: 1rem;
+        text-decoration: underline #33b864;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -322,47 +353,35 @@ li a:hover {
     }
 
     .main {
-        margin-top: 2rem;
+        grid-template-columns: 1fr; 
     }
-    .img-about{
-        width: 25rem;
+
+    .detail1 h2 {
+        font-size: 2.5rem; 
     }
-    .about p{
-        font-size: 1.1rem;
-        margin: 2rem;
+
+    .video {
+        width: 100%; 
+        height: auto;
     }
-    .skills h2{
-        font-size: 1.7rem;
-        color: #33b864;
-        font-family: cursive;
-    }
-    .column {
+
+    .detail2 {
+        text-align: center; 
         margin: 1rem;
     }
-    .column img{
-        width: 2.2rem;
+
+    .detail2 h3 {
+        font-size: 1.5rem;
     }
-    .detail1 h2{
-        font-size: 2.7rem;
+
+    .detail2 p {
+        font-size: 1rem; 
+        line-height: 1.4;
+        text-align: justify;
     }
-    .video{
-        width: 28rem;
-        height: 20rem;
+
+    .detail2 p span {
+        font-size: 0.8rem; 
+        text-decoration: underline #33b864;
     }
-    .detail2{
-        margin: 2rem;
-    }
-    .detail2 h3{
-        font-size: 1.8rem;
-    }
-    .detail2 p{
-        line-height: 1.6;
-        font-size: 1.1rem;
-        
-    }
-    .detail2 p span{
-        
-        font-size: 1rem;
-    }
-    
 }
