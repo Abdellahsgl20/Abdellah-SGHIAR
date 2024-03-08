@@ -553,7 +553,67 @@ li a:hover {
     font-family: cursive;
 }
 /* Section 4 End */
+/*Loading page*/
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #4169e1, #1F252E);
+  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+  }
+  
+  #svg {
+    height: 190px;
+    width: 180px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  
+  .logo-name {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+    
+  }
+  .section1,
+.section2,
+.section3,
+.section4 {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
 
+body:not(.loading) .section1,
+body:not(.loading) .section2,
+body:not(.loading) .section3,
+body:not(.loading) .section4 {
+  opacity: 1;
+}
+/*Loading page*/
 
 
 .dark-mode {
