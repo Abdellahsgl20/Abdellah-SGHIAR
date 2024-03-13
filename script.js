@@ -22,4 +22,26 @@ gsap.fromTo(
       delay: 0.5,
     }
   );
-  
+  function changeLanguage(language) {
+        const elements = document.querySelectorAll('[data-lang]');
+        elements.forEach((element) => {
+            const key = element.getAttribute('data-lang');
+            element.innerHTML = language[key] || element.innerHTML;
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const languageSelect = document.getElementById('languageSelect');
+
+        languageSelect.addEventListener('change', function () {
+            const selectedLanguage = languageSelect.value;
+
+            if (selectedLanguage === 'en') {
+                changeLanguage(englishLanguage);
+            } else if (selectedLanguage === 'fr') {
+                changeLanguage(frenchLanguage);
+            }
+        });
+    });
+
+    
