@@ -118,7 +118,14 @@ li a:hover {
     font-size: 4.2rem;
     color: #33b864;
     font-family: cursive;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.1em;
+    animation: leftSideAni 1.5s ease forwards
+}
+.detail1 p{
+    font-size: 1.3rem;
+    color: #000;
+    font-family: cursive;
+    letter-spacing: 0.1em;
     animation: leftSideAni 1.5s ease forwards
 }
 .detail2{
@@ -173,6 +180,9 @@ li a:hover {
 }
 .dark-mode .detail2 h3{
     color: #33b864;
+}
+.dark-mode .detail1 p{
+    color: white;
 }
 .dark-mode .detail2 p{
     color: white;
