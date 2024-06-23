@@ -312,6 +312,7 @@ li a:hover {
 
 .image-projects1 {
     display: flex;
+    gap: 30px;
     justify-content: space-between;
     padding: 2rem;
 
@@ -344,6 +345,7 @@ li a:hover {
 .proa2 p{
     line-height: 1.4;
     font-family: Arial, sans-serif;
+    text-align:justify;
 }
 .pro2{
     border: 2px solid  #33b864;
@@ -371,6 +373,7 @@ li a:hover {
 .prob2 p{
     line-height: 1.4;
     font-family: Arial, sans-serif;
+    
 }
 .pro3{
     border: 2px solid  #33b864;
@@ -429,6 +432,7 @@ li a:hover {
 
 .image-projects2 {
     display: flex;
+    gap: 30px;
     justify-content: space-between;
     padding: 2rem;
 
@@ -542,6 +546,70 @@ li a:hover {
     line-height: 1.4;
     font-family: Arial, sans-serif;
 }
+
+.image-projects3 {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding: 2rem;
+
+    
+}
+.pro9{
+    border: 2px solid  #33b864;
+    border-radius: 19px;
+    
+}
+.pro9:hover{
+    transform: rotate(3deg);
+    box-shadow: 3px 4px 7px  #aaaaaa;
+}
+.pro9 img{
+    width: 20rem;
+    height: 16rem;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.proi2 {
+   
+    text-align: left;
+    padding-left: 1rem;
+}
+.proi2 h2{
+    font-family: Arial, sans-serif;
+}
+.proi2 p{
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+}
+.pro10{
+    border: 2px solid  #33b864;
+    border-radius: 19px;
+    
+}
+.pro10:hover{
+    transform: rotate(3deg);
+    box-shadow: 3px 4px 7px  #aaaaaa;
+}
+.pro10 img{
+    width: 20rem;
+    height: 16rem;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.proj2 {
+   
+    text-align: left;
+    padding-left: 1rem;
+}
+.proj2 h2{
+    font-family: Arial, sans-serif;
+}
+.proj2 p{
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+}
+
 .pproject{
     padding: 0em 0.8em;
     font-weight: bold;
