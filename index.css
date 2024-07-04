@@ -1178,5 +1178,10 @@ body:not(.loading) .section4 {
         grid-gap: 20px;
         justify-content: center;
     }
+    .image-projects3 {
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+    }
    
 }
